@@ -121,6 +121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealthPoints: 50
   healthPointsText: {fileID: 4338360755503281449}
+  fission: {fileID: 2633034076601035198, guid: 4c9d7eb8003752c42a38a123d53f299f, type: 3}
   damagePeriodic: 0.2
 --- !u!1 &7429076735267271939
 GameObject:

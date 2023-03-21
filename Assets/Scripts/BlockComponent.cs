@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using TMPro;
@@ -30,6 +29,7 @@ public class BlockComponent : MonoBehaviour
         public float damagePeriodic;
         SnakeTail _snakeTail;
         ScoresComponent _scoresComponent;
+        
         void Start()
         {
             _scoresComponent = FindObjectOfType<ScoresComponent>();
@@ -38,13 +38,12 @@ public class BlockComponent : MonoBehaviour
             if (chunks.Length > 1)
             {
                 FoodComponent[] foods = chunks[chunks.Length - 2].GetComponentsInChildren<FoodComponent>();
-                HealthPoints = Random.Range(_snakeTail.SnakeCircles - 1, _snakeTail.SnakeCircles + foods.Sum(food => food.healthPoints));
+                HealthPoints = Mathf.Abs(Random.Range(_snakeTail.SnakeCircles - 1, _snakeTail.SnakeCircles + foods.Sum(food => food.healthPoints)));
             }
             else
             {
                 HealthPoints = Random.Range(1, _snakeTail.SnakeCircles);
             }
-            // HealthPoints = Random.Range(1, _snakeTail.SnakeCircles + foods.Sum(food => food.healthPoints));
             healthPointsText.text = HealthPoints.ToString();
             GetComponent<Renderer>().material.color = GetColor(HealthPoints);
         }

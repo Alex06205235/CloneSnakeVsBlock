@@ -358,3 +358,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthPoints: 5
   healthPointsText: {fileID: 760194332836736898}
+  eatSound: {fileID: 0}

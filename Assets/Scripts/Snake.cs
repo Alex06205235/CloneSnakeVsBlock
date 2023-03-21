@@ -1,8 +1,5 @@
-using System;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class Snake : MonoBehaviour
 {
@@ -36,11 +33,6 @@ public class Snake : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if (!other.gameObject.CompareTag("Food")) return;
-        FoodComponent count = other.transform.GetComponent<FoodComponent>();
-        for (int i = 0; i < count.healthPoints; i++)
-        {
-            _snakeTail.AddCircle();
-        }
-        Destroy(other.gameObject);
+        GetComponent<AudioSource>().Play();
     }
 }

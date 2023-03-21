@@ -1,26 +1,26 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class SnakeTail : MonoBehaviour
 {
-    private Rigidbody _snake;
+    Rigidbody _snake;
     public GameObject game;
     public GameObject bodyPart;
     public float circleDiameter;
     BlockComponent _healthPoints;
-    List<GameObject> _snakeCircles = new List<GameObject>();
+    readonly List<GameObject> _snakeCircles = new List<GameObject>();
     public GameObject loss;
+    public GameObject fission;
+    ParticleSystem _part;
 
     public AudioSource cotton;
-    public AudioSource eatFood;
     public int SnakeCircles => _snakeCircles.Count;
-    List<Vector3> _positions = new List<Vector3>();
-
+    readonly List<Vector3> _positions = new List<Vector3>();
+    
     void Awake()
     {
         _positions.Add(bodyPart.transform.position);
-
+        _part = fission.GetComponent<ParticleSystem>();
     }
     void Update()
     {
@@ -50,7 +50,6 @@ public class SnakeTail : MonoBehaviour
         GameObject circle = Instantiate(bodyPart, _positions[^1], Quaternion.identity, transform);
         _snakeCircles.Add(circle);
         _positions.Add(circle.transform.position);
-        // eatFood.Play();
     }
     
     public void RemoveCircle()
@@ -59,7 +58,8 @@ public class SnakeTail : MonoBehaviour
         {
             GameObject circle = _snakeCircles[^1];
             _snakeCircles.RemoveAt(_snakeCircles.Count - 1);
-            // cotton.Play();
+            cotton.Play();
+            _part.Play();
             Destroy(circle);
         }
         else if(_snakeCircles.Count == 0)

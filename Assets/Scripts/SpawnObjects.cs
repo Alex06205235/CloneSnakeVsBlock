@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -56,7 +55,7 @@ public class SpawnObjects : MonoBehaviour
 
     IEnumerator GarbageCollectorObjects()
     {
-        while (_chunks.Count > 0)
+        while (_chunks.Count > 2)
         {
             List<ISpawnChunk> newChunks = new List<ISpawnChunk>();
             foreach(ISpawnChunk chunk in _chunks)
