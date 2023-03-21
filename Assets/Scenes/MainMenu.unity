@@ -161,8 +161,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 38, y: 429.8357}
-  m_SizeDelta: {x: -1738.926, y: 30}
+  m_AnchoredPosition: {x: 52, y: 348.2379}
+  m_SizeDelta: {x: -3261.403, y: 27.6086}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &335645366
 MonoBehaviour:
@@ -412,7 +412,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 48, y: -89}
+  m_AnchoredPosition: {x: 48, y: -127}
   m_SizeDelta: {x: -1698.926, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &484219846
@@ -560,8 +560,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 127, y: -795}
-  m_SizeDelta: {x: -1599.1128, y: 136.42151}
+  m_AnchoredPosition: {x: 46.521362, y: -807}
+  m_SizeDelta: {x: -1669.8926, y: 137.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1019726750
 MonoBehaviour:
@@ -617,8 +617,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -695,7 +695,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 45, y: -569}
+  m_AnchoredPosition: {x: 45, y: -543}
   m_SizeDelta: {x: -1599.1128, y: 136.42151}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1153262973
@@ -1033,8 +1033,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 88, y: -273}
-  m_SizeDelta: {x: -1599.1128, y: 136.42151}
+  m_AnchoredPosition: {x: -38.466805, y: -266.989}
+  m_SizeDelta: {x: -1710.3383, y: 141.708}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1705033666
 MonoBehaviour:
@@ -1090,8 +1090,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
